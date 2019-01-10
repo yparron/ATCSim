@@ -338,7 +338,7 @@ AirController::doWork()
         (*it)->getRoute()->push_front(ra2);
         (*it)->getRoute()->push_front(ra1);
         (*it)->getRoute()->push_front(ra0);
-      }else if(((*it)->getPosition().get_y() > 0) && ((*it)->getPosition().get_x() > 15000)){
+      }else if(((*it)->getPosition().get_y() > 0) && ((*it)->getPosition().get_x() > 9500)){
         (*it)->getRoute()->push_back(rcAa11);
         (*it)->getRoute()->push_front(rcAa10);
         (*it)->getRoute()->push_front(rcAa9);
@@ -351,7 +351,7 @@ AirController::doWork()
         (*it)->getRoute()->push_front(rcAa2);
         (*it)->getRoute()->push_front(rcAa1);
         (*it)->getRoute()->push_front(rcAa0);
-      }else if(((*it)->getPosition().get_y() > 0) && (((*it)->getPosition().get_x() < 15000) && ((*it)->getPosition().get_x() > 0))){
+      }else if(((*it)->getPosition().get_y() > 0) && (((*it)->getPosition().get_x() < 9500) && ((*it)->getPosition().get_x() > 0))){
         (*it)->getRoute()->push_back(rcAb11);
         (*it)->getRoute()->push_front(rcAb10);
         (*it)->getRoute()->push_front(rcAb9);
@@ -364,7 +364,7 @@ AirController::doWork()
         (*it)->getRoute()->push_front(rcAb2);
         (*it)->getRoute()->push_front(rcAb1);
         (*it)->getRoute()->push_front(rcAb0);
-      }else if(((*it)->getPosition().get_y() < 0) && ((*it)->getPosition().get_x() > 15000)){
+      }else if(((*it)->getPosition().get_y() < 0) && ((*it)->getPosition().get_x() > 9500)){
         (*it)->getRoute()->push_back(rcBa11);
         (*it)->getRoute()->push_front(rcBa10);
         (*it)->getRoute()->push_front(rcBa9);
@@ -377,7 +377,7 @@ AirController::doWork()
         (*it)->getRoute()->push_front(rcBa2);
         (*it)->getRoute()->push_front(rcBa1);
         (*it)->getRoute()->push_front(rcBa0);
-      }else if(((*it)->getPosition().get_y() < 0) && (((*it)->getPosition().get_x() < 15000) && ((*it)->getPosition().get_x() > 0))){
+      }else if(((*it)->getPosition().get_y() < 0) && (((*it)->getPosition().get_x() < 9500) && ((*it)->getPosition().get_x() > 0))){
         (*it)->getRoute()->push_back(rcBb11);
         (*it)->getRoute()->push_front(rcBb10);
         (*it)->getRoute()->push_front(rcBb9);
