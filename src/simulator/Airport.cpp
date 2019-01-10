@@ -308,6 +308,10 @@ Airport::checkCollisions()
 				i = removeFlight((*i)->getId());
 				j = removeFlight((*j)->getId());
 				points += COLLISION_POINTS;
+
+				if((i == flights.begin()) || (j == flights.begin())){
+					any_landing_ = false;
+				}
 				return; //Avoid not valid iterator. Only one collision per cycle
 			}
 			j++;
